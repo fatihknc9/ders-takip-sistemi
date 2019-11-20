@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ders takip sistemi</title>
+    <link href="style/index-style.css" rel="stylesheet">
+</head>
+<body>
+    <hr>
+    <h2>Ders takip sistemi - Giriş</h2>
+    <hr>
+    <div class="giris-kismi">
+        <form action="giris.php" method="post">        
+            <table>
+                <tr>
+                    <td>Kullanıcı adı</td>
+                    <td><input type="text" name="username" maxlenght="20" placeholder="Kullanıcı adınız..."></td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td><input type="password" name="password" maxlenght="20" placeholder="Şifreniz..."></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" name="giris_yap">Giriş yap</button></td>
+                </tr>
+            </table>
+            <label>Hesabın yok mu? <a href="kayit.html">Kayıt ol</a></label>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.menuler{
+    margin-left: 15%;
+    margin-top: 5%;
+    font-size: 20px;
+    width: 1500px;
+    height: 65px;
+    background-color: rgb(240, 238, 238);
+}
+
+.menuler > ul > li {
+    position: relative;
+    min-width: 30px;
+    padding: 20px;
+    float: left;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.menuler > ul > li > a{
+    text-decoration: none;
+    color: #4371d4;
+
+}
+
+.menuler > ul > li > a:hover{
+    color: #2639e4;
+}
