@@ -16,7 +16,7 @@
         <ul>
             <li><a href="index.php">Anasayfa</a></li>
             <li><a href="guncelle.php">Güncelle</a></li>
-            <li><a href="hakkinda.html">Hakkında</a></li>
+            <li><a href="hakkinda.php">Hakkında</a></li>
         </ul>
         
         

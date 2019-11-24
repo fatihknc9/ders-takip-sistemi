@@ -1,6 +1,6 @@
 <?php 
 
-require "baglan1.php";
+require "baglan.php";
 
 if (isset($_POST['pzt_update']))
 {
@@ -14,7 +14,7 @@ if (isset($_POST['pzt_update']))
     $pzt_7 = trim(htmlspecialchars($_POST['pzt-7']));
     $pzt_8 = trim(htmlspecialchars($_POST['pzt-8']));
     
-    $conn1 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$pzt_id'");
+    $conn1 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$pzt_id'");
     $conn1->bindParam(1, $pzt_1);
     $conn1->bindParam(2, $pzt_2);
     $conn1->bindParam(3, $pzt_3);
@@ -47,7 +47,7 @@ elseif (isset($_POST['sali_update']))
     $sali_7 = trim(htmlspecialchars($_POST['sali-7']));
     $sali_8 = trim(htmlspecialchars($_POST['sali-8']));
     
-    $conn2 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$sali_id'");
+    $conn2 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$sali_id'");
     $conn2->bindParam(1, $sali_1);
     $conn2->bindParam(2, $sali_2);
     $conn2->bindParam(3, $sali_3);
@@ -80,7 +80,7 @@ elseif(isset($_POST['crs_update']))
     $crs_7 = trim(htmlspecialchars($_POST['crs-7']));
     $crs_8 = trim(htmlspecialchars($_POST['crs-8']));
     
-    $conn3 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$crs_id'");
+    $conn3 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$crs_id'");
     $conn3->bindParam(1, $crs_1);
     $conn3->bindParam(2, $crs_2);
     $conn3->bindParam(3, $crs_3);
@@ -113,7 +113,7 @@ elseif(isset($_POST['prs_update']))
     $prs_7 = trim(htmlspecialchars($_POST['prs-7']));
     $prs_8 = trim(htmlspecialchars($_POST['prs-8']));
     
-    $conn4 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$prs_id'");
+    $conn4 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE gunler_id = '$prs_id'");
     $conn4->bindParam(1, $prs_1);
     $conn4->bindParam(2, $prs_2);
     $conn4->bindParam(3, $prs_3);
@@ -146,7 +146,7 @@ elseif(isset($_POST['cuma_update']))
     $cuma_7 = trim(htmlspecialchars($_POST['cuma-7']));
     $cuma_8 = trim(htmlspecialchars($_POST['cuma-8']));
     
-    $conn5 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$cuma_id'");
+    $conn5 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$cuma_id'");
     $conn5->bindParam(1, $cuma_1);
     $conn5->bindParam(2, $cuma_2);
     $conn5->bindParam(3, $cuma_3);
@@ -221,7 +221,7 @@ elseif(isset($_POST['full_update']))
     $cuma_8 = trim(htmlspecialchars($_POST['cuma-8']));
 
 
-    $connect1 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$pzt_id'");
+    $connect1 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$pzt_id'");
     
     $connect1->bindParam(1, $pzt_1);
     $connect1->bindParam(2, $pzt_2);
@@ -233,7 +233,7 @@ elseif(isset($_POST['full_update']))
     $connect1->bindParam(8, $pzt_8);
     
     
-    $connect2 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$sali_id'");
+    $connect2 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$sali_id'");
     
     $connect2->bindParam(1, $sali_1);
     $connect2->bindParam(2, $sali_2);
@@ -245,7 +245,7 @@ elseif(isset($_POST['full_update']))
     $connect2->bindParam(8, $sali_8);
     
     
-    $connect3 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$crs_id'");
+    $connect3 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$crs_id'");
     
     $connect3->bindParam(1, $crs_1);
     $connect3->bindParam(2, $crs_2);
@@ -256,7 +256,7 @@ elseif(isset($_POST['full_update']))
     $connect3->bindParam(7, $crs_7);
     $connect3->bindParam(8, $crs_8);
     
-    $connect4 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$prs_id'");
+    $connect4 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$prs_id'");
     
     $connect4->bindParam(1, $prs_1);
     $connect4->bindParam(2, $prs_2);
@@ -268,7 +268,7 @@ elseif(isset($_POST['full_update']))
     $connect4->bindParam(8, $prs_8);
     
     
-    $connect5 = $db->prepare("UPDATE pzt SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE pzt_id = '$cuma_id'");
+    $connect5 = $db->prepare("UPDATE gunler SET ders1 = ?, ders2 = ?, ders3 = ?, ders4 = ?, ders5 = ?, ders6 = ?, ders7 = ?, ders8 = ? WHERE veri_id = '$cuma_id'");
     
     $connect5->bindParam(1, $cuma_1);
     $connect5->bindParam(2, $cuma_2);
